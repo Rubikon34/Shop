@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <title>Product Details</title>
+</head>
+<body>
+  <nav class="container-fluid nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 links">
+          <div>
+            <a class="menu__link" href="#">Головна</a>
+            <a class="menu__link" href="#">Товари</a>
+            <a class="menu__link" href="#">Відгуки</a>
+            <a class="menu__link" href="#">Контакти</a>
+            <input class="search__input" type="text">
+            <button class="search__btn">Search</button>
+          </div>      
+          <div class="basket">
+            <img class="basket__img" src="https://cdn-icons-png.flaticon.com/512/15/15278.png" alt="">
+            <h4 class="sum">0.00грн</h4>
+            
+            <div class="basket__details">
+              <button class="order"> Оформити </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+    <div class="container">
+        <h1 class="product-title"><%= data2.title %></h1>
+        <p class="product-description"><%= data2.description %></p>
+        <p class="product-price">Price: $<%= data2.price %></p>
+        <p class="product-discount">Discount: <%= data2.discountPercentage %>%</p>
+        <p class="product-rating">Rating: <%= data2.rating %></p>
+        <p class="product-stock">Stock: <%= data2.stock %></p>
+        <p class="product-brand">Brand: <%= data2.brand %></p>
+        <p class="product-category">Category: <%= data2.category %></p>
+        <img src="<%= data2.thumbnail %>" alt="Thumbnail" class="product-thumbnail">
+        <h2 class="product-images-heading">Images</h2>
+        <div class="product-images">
+          <% data2.images.forEach(function(image) { %>
+            <img src="<%= image %>" alt="Product Image">
+          <% }); %>
+        </div>
+
+  <style>
+/* Global styles */
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.nav {
+  background: #333;
+  height: 70px;
+  color: white;
+  padding: 15px;
+}
+.basket {
+  display: flex;
+}
+.links {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+img {
+  max-width: 100%;
+}
+nav a {
+  color: inherit;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 4px;
+
+  
+}
+
+.nav a:hover {
+    background: lime;
+    color: black;
+  }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Product details styles */
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.product-discount {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.product-rating {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-stock {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-brand {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-category {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-thumbnail {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-images img {
+  max-width: 150px;
+  height: auto;
+  margin: 5px;
+}
+
+
+  </style>
+</body>
+</html>

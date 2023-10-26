@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+
+
+
+
+  
+  <nav class="container-fluid nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 links">
+          <div>
+            <a class="menu__link" href="#">Головна</a>
+            <a class="menu__link" href="#">Товари</a>
+            <a class="menu__link" href="/overview">Відгуки</a>
+            <a class="menu__link" href="#">Контакти</a>
+            <input class="search__input" type="text">
+            <button class="search__btn">Search</button>
+          </div>      
+          <div class="basket">
+            <img class="basket__img" src="https://cdn-icons-png.flaticon.com/512/15/15278.png" alt="">
+            <h4 class="sum">0.00грн</h4>
+            
+            <div class="basket__details">
+              <h6 class="empty">Корзина порожня</h6>
+              <button id="order1" onclick="ac()" class="order">2Оформити </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  
+  
+  
+  <div class="container-fluid slider">
+    <div class="container">
+      <div class="row aic">
+        <div class="col-1">
+          <button class="btn-arrow btn-arrow__left">left</button>
+        </div>
+        <div class="col-10">
+
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img class="slider__img" src="https://soyuz-group.ru/upload/resize_cache/iblock/d19/1199_399_1/d1994f148f5e93695a9aed7f1de366bd.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="slider__img" src="http://tehnosklad.ua/app_default/media/slider/banner_vstraivaemaja.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="slider__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg3YYaFpfiDnsNhclVrhn_IboASCbbRKY3ug&usqp=CAU" alt="">
+
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+
+          </div>
+        <div class="col-1">
+          <button class="btn-arrow btn-arrow__right">right</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid categories__wrapper">
+    <div class="container">
+      <div class="row all-products">
+        
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="modal-wrapper">
+    <div class="my-modal">
+      <button class="close">x</button>
+      <form>
+        <input class="modal__input" type="text" placeholder="ім'я">
+        <input class="modal__input" type="text" placeholder="Прізвище">
+        <input class="modal__input" type="text" placeholder="По батькові">
+        <input class="modal__input" type="text" placeholder="Номер телефону">
+        <input class="modal__input" type="text" placeholder="Адреса">
+        <input class="modal__input" type="text" placeholder="e-mail">
+        <button class="order-confirm">Підтвердити замовлення</button>        
+      </form>
+    </div>
+  </div>
+ 
+  <div class="container-fluid footel footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <img src="img/logo.png" alt="">
+        </div>
+        <div class="col-3">
+          <h3>ПОКУПЦЕВІ</h3>
+ <a href="" class="footer__link"> Статус замовлення </a>
+ <a href="" class="footer__link"> Цілодобовий магазин 24/7 </a>
+ <a href="" class="footer__link"> Доставка і оплата </a>
+ <a href="" class="footer__link"> Обмін і повернення товару </a>
+ <a href="" class="footer__link"> Гарантія </a>
+ <a href="" class="footer__link"> Eксперти </a>
+ <a href="" class="footer__link"> Інструкції з експлуатації </a>
+ <a href="" class="footer__link"> Акції в мережі MOYO </a>
+ <a href="" class="footer__link"> Кредит </a>
+ <a href="" class="footer__link"> Мапа сайту </a>
+ <a href="" class="footer__link"> Популярні товари </a>
+ <a href="" class="footer__link"> Бренди </a>
+        </div>
+<div class="col-3">
+  <h3>MOYO</h3>
+<a href="#" class="footer__link">Про компанію </a>
+<a href="#" class="footer__link">Контакти </a>
+<a href="#" class="footer__link">Правова інформація </a>
+<a href="#" class="footer__link">Робота в MOYO </a>
+<a href="#" class="footer__link">Оренда </a>
+<a href="#" class="footer__link">Стати партнером </a>
+<a href="#" class="footer__link">MOYO club </a>
+<a href="#" class="footer__link">Мої бонуси </a>
+<a href="#" class="footer__link">Послуга Trade-in </a>
+<a href="#" class="footer__link">Торгова мережа MOYO </a>
+<a href="#" class="footer__link">Декларації та сертифікати </a>
+</div>
+<div class="col-3">
+ <h3>МЕРЕЖА МАГАЗИНІВ</h3>
+<a href="#" class="footer__link">Київ </a>
+<a href="#" class="footer__link">Одеса </a>
+<a href="#" class="footer__link">Львів </a>
+<a href="#" class="footer__link">Дніпро </a>
+<a href="#" class="footer__link">Тернопіль </a>
+<h4 class="footer__title">Соцмережі</h4>
+<div class="flex">
+<a href="#" class="footer__link">
+  <img src="https://www.moyo.ua/new-moyo/build/img/icon-footer-ytb.svg" alt="">  
+</a>
+<a href="">
+  <img src="https://www.moyo.ua/new-moyo/build/img/icon-footer-fb.svg" alt="">
+</a>
+<a href="">
+  <img src="https://www.moyo.ua/new-moyo/build/img/icon-footer-inst.svg" alt="">
+</a>
+<a href="">
+  <img src="https://www.moyo.ua/new-moyo/build/img/icon-footer-tg.svg" alt="">
+</a>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function ac () {
+let modalWrapper = document.getElementsByClassName('modal-wrapper')[0]
+  modalWrapper.style.display="flex"
+}
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+
+ <script>
+  const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.btn-arrow__right',
+    prevEl: '.btn-arrow__left',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+ </script>
+</body>
+</html>
