@@ -67,6 +67,13 @@ app.get('/details/:id', (req, res) => {
   // Рендеринг шаблона с данными
 });
 
+// git send files -> cloud
+// install login
+
+// git add .
+// git commit -m "c"
+// git push -u origin main
+
 
 app.listen(3000)
 //  http://localhost:3000/details/12
